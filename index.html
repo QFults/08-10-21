@@ -38,38 +38,65 @@
     // console.log(user.email)
     // console.log(user.age)
 
-    let thing = {
-      person: {
-        name: 'John Doe',
-        age: 47,
-        children: [
-          {
-            name: 'James Doe',
-            age: 18
-          },
-          {
-            name: 'Jane Doe',
-            age: 19,
-            pets: [
-              {
-                name: 'Beef',
-                breed: 'Chihuahua',
-                age: 2
-              },
-              {
-                name: 'Bear',
-                breed: 'Cockapoo',
-                age: 7
-              }
-            ]
-          }
-        ]
-      }
-    }
+    // let thing = {
+    //   person: {
+    //     name: 'John Doe',
+    //     age: 47,
+    //     children: [
+    //       {
+    //         name: 'James Doe',
+    //         age: 18
+    //       },
+    //       {
+    //         name: 'Jane Doe',
+    //         age: 19,
+    //         pets: [
+    //           {
+    //             name: 'Beef',
+    //             breed: 'Chihuahua',
+    //             age: 2
+    //           },
+    //           {
+    //             name: 'Bear',
+    //             breed: 'Cockapoo',
+    //             age: 7
+    //           }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // }
 
-    console.log(thing.person.name)
-    console.log(thing.person.children[0].age)
-    console.log(thing.person.children[1].pets[1].breed)
+    // console.log(thing.person.name)
+    // console.log(thing.person.children[0].age)
+    // console.log(thing.person.children[1].pets[1].breed)
+
+
+      // Here we are given a cob-web of items. Let's dig in and grab the items we need.
+        const theCobWeb = {
+          biggestWeb: {
+            item: 'comb',
+            biggerWeb: {
+              items: ['glasses', 'paperclip', 'bubblegum'],
+              smallerWeb: {
+                item: 'toothbrush',
+                tinyWeb: {
+                  items: ['toenails', 'lint', 'wrapper', 'homework']
+                }
+              }
+            },
+            otherBigWeb: {
+              item: 'headphones'
+            }
+          }
+        }
+
+// Create the code necessary to print each of the following lines using the object above:
+// "I found my glasses!"
+// "I found my toothbrush!"
+// "I found my headphones!"
+// "I found my homework!"
+
   </script>
 </body>
 

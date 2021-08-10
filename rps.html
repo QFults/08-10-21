@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    let choices = ['r', 'p', 's']
+    let wins = 0
+    let ties = 0
+    let losses = 0
+
+    for (let i = 0; i < 10; i++) {
+      let computer = choices[Math.floor(Math.random() * choices.length)]
+      let user = prompt('Choose r, p, or s')
+      if (choices.indexOf(user) !== -1) {
+        alert(`The computer chose ${computer}`)
+
+        if (user === computer) {
+          ties++
+          alert(`Tie! You have ${ties} ties`)
+        } else if ((user === 'r' && computer === 's') || (user === 'p' && computer === 'r') || (user === 's' && computer === 'p')) {
+          wins++
+          alert(`Win! You have ${wins} wins`)
+        } else {
+          losses++
+          alert(`Loss! You have ${losses} losses`)
+        }
+
+      } else {
+        alert('Invalid choice')
+        i--
+      }
+    }
+
+    alert(`
+      ----------
+      Results
+      ----------
+
+      Wins: ${wins}
+      Ties: ${ties}
+      Losses: ${losses}
+
+      ----------
+    `)
+  </script>
+</body>
+
+</html>

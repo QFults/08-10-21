@@ -28,8 +28,48 @@
     //   console.log(names[i])
     // }
 
+    // let user = {
+    //   name: 'John Doe',
+    //   age: 47,
+    //   email: 'johndoe@gmail.com',
+    //   phone: 1234567890
+    // }
     
+    // console.log(user.email)
+    // console.log(user.age)
 
+    let thing = {
+      person: {
+        name: 'John Doe',
+        age: 47,
+        children: [
+          {
+            name: 'James Doe',
+            age: 18
+          },
+          {
+            name: 'Jane Doe',
+            age: 19,
+            pets: [
+              {
+                name: 'Beef',
+                breed: 'Chihuahua',
+                age: 2
+              },
+              {
+                name: 'Bear',
+                breed: 'Cockapoo',
+                age: 7
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+    console.log(thing.person.name)
+    console.log(thing.person.children[0].age)
+    console.log(thing.person.children[1].pets[1].breed)
   </script>
 </body>
 
